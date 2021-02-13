@@ -1,10 +1,14 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <div class="hello">Hi... please joise Location</div>
+      <div class="links">
+        <router-link class="location-btn" to="/">Home</router-link> |
+        <router-link class="location-btn" to="/location1">Location_1</router-link>
+        <router-link class="location-btn" to="/location2">Location_2</router-link>
+      </div>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -16,17 +20,11 @@
   text-align: center;
   color: #2c3e50;
 }
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.location-btn {
+  margin: 30px;
+  background: rgb(35, 123, 150);
+}
+.vue-map-container{
+  width:90%;
 }
 </style>
