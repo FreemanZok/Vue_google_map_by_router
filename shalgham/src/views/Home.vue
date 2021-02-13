@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
     <div>
       <GmapMap
         :center="{ lat: 10, lng: 10 }"
@@ -25,6 +24,19 @@
 // @ is an alias to /src
 
 export default {
-  name: "Home",
+ 
+  data(){
+    return {
+      center:{ lat: 10, lng:10},
+      markers:[
+        {
+          position:{ lat:11, lng:11}
+        },
+        {
+          position:{ lat:9, lng:9}
+        },
+      ]
+    }
+  }
 };
 </script>

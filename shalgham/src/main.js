@@ -12,7 +12,6 @@ new Vue({
 }).$mount('#app')
 
 
-
 import * as VueGoogleMaps from 'vue2-google-maps'
  
 Vue.use(VueGoogleMaps, {
